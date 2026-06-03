@@ -1,0 +1,101 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+body {
+    @include estilos-body;
+}
+
+h1 {
+    @include estilos-h1;
+}
+
+h2 {
+    @include estilos-h2;
+}
+
+.LoremH3-header{
+    font-weight: bold;
+    color: #AA1535;
+}
+
+.subtitle{
+    font-size: 15px;
+    font-weight: bold;
+    color: #585858;
+}
+
+p{
+    font-size: 13px;
+    color: #7F8C8D;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* helper */
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* header */
+#header{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+/* Menu de navegacion */
+.linea-divisora{
+    border: 0;
+    height: 15px;
+    width: 100%;
+    background-color: #E8E8E8;
+}
+
+#nav {
+    text-align: center; 
+}
+
+#nav a{
+    margin: 0 15px; /* Espacio entre cada botón */
+    text-decoration: none;
+    color: #585858;
+}
+
+/* Seccion Hero */
+.LoremH2-header{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Tarjetas productos */
+.Car1, .Car2 {
+    display: inline-block; 
+    vertical-align: top;  
+    width: 42%;            
+    margin: 5PX;
+    padding: 25px;
+    border: 1px solid #DDDDDD; 
+    background-color:  #F4F4F4;
+    text-align: left;
+    min-height: 330px;     
+}
+
+.Car1 img, .Car2 img {
+    float: right;         
+    margin-left: 10px;
+}
+
+span {
+    color: #AA1535;
+    cursor: pointer;
+    font-weight: bold;
+}
